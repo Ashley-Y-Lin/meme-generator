@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./memegen.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <!-- this is going to contain the entire page -->
+    <div class="container-fluid p-0">
+      <div id="topPart">
+        <!-- this is going to be the top gray part of the page -->
+        <header>
+          <h1 style="padding-top: 15px">I CAN HAZ MEMEZ?</h1>
+          <span>Fill out the form to start creating memes!</span>
+        </header>
+        <br>
+        <div>
+          <!-- this is going to contain the form -->
+          <form action="memegen.js">
+            <div class="form-group form-inline">
+              <label class="col-form-label col-3">Image URL</label>
+              <input class="form-control col-8 img-url" type="text" placeholder="What's the URL for your meme image?">
+            </div>
+            <div class="form-group form-inline">
+              <label class="col-form-label col-3">Text On Top</label>
+              <input class="form-control col-8 img-text-top" type="text" placeholder="(Optional) What text do you want at the top of the meme?">
+            </div>
+            <div class="form-group form-inline">
+              <label class="col-form-label col-3">Text On Bottom</label>
+              <input class="form-control col-8 img-text-bottom" type="text" placeholder="(Optional) What text do you want at the bottom of the meme?">
+            </div>
+            <div class="form-group form-inline">
+              <div class="col-9"></div>
+              <button class="btn col-form-button btn-primary col-2" style="margin-bottom: 30px" type="submit">Add Meme</button>
+              <div style="clear: right"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="memeArea">
+      <!-- this is the part of page that will contain memes -->
+    </div>
+    <br>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="memegen.js"></script>
+</body>
+</html>
